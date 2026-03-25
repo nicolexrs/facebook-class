@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "npm.enableRunFromFolder": true,
+    "files.exclude": {
+        "**/.git": false
+    }
+}

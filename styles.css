@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 45vw;
+    border-right: 1px solid black;
+}
+
+.banner {
+    padding: 0 20px;
+    position: relative
+}
+
+.banner-text {
+    font-size: 50px;
+    align-self: end;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 190px;
+    font-weight: 900;
+}
+
+.banner-text p {
+    color: rgb(4, 91, 232);
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 60px;
+    width: 50vw;
+    overflow-x: hidden;
+
+}
+
+.auth .logo {
+    display: none;
+}
+
+.auth p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px
+}
+
+input {
+    width: 100%;
+    padding: 24px 10px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: rgb(178, 174, 174);
+    border-style: solid;
+}
+
+form button {
+
+    background-color: rgb(4, 91, 232);
+    border: none;
+    color: white;
+
+}
+
+a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+button {
+    padding: 14px 10px;
+    font-weight: bold;
+    border-radius: 50px;
+    border-color: rgb(4, 91, 232);
+    background-color: transparent;
+    color: rgb(4, 91, 232);
+}
+
+.auth img {
+    align-self: center;
+}
+
+
+.container {
+    animation-name: my-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes my-animation {
+    from {
+        transform: translateX(0%);
+
+    }
+
+    to {
+        transform: translateX(100%);
+
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        display: none;
+    }
+
+    .auth {
+        width: 100vw;
+    }
+
+    .auth .logo {
+        display: block;
+    }
+}
